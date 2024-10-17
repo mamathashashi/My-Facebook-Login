@@ -1,0 +1,125 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Container for the entire layout */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f2f5;
+}
+
+/* Left side with Facebook title and description */
+.left {
+  flex: 1;
+  padding: 20px;
+  text-align: right;
+}
+
+.left h1 {
+  font-size: 50px;
+  color: #1877f2;
+  font-weight: bold;
+}
+
+.left p {
+  font-size: 24px;
+  margin-top: 10px;
+  color: #606770;
+}
+
+/* Right side with login form */
+.right {
+  flex: 1;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.login-form {
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* Input fields */
+.input-field {
+  width: 100%;
+  padding: 14px;
+  margin: 10px 0;
+  border: 1px solid #dddfe2;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  background-color: #1877f2;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #165cbb;
+}
+
+/* Forgot password link */
+.forgot-password {
+  display: block;
+  margin-top: 10px;
+  color: #1877f2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Divider line */
+.divider {
+  height: 1px;
+  background-color: #dddfe2;
+  margin: 20px 0;
+}
+
+/* Create new account button */
+.create-account-button {
+  width: 100%;
+  background-color: #42b72a;
+  color: white;
+  padding: 14px;
+  border: none;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.create-account-button:hover {
+  background-color: #36a420;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left {
+    text-align: center;
+  }
+}
